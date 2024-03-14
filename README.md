@@ -29,6 +29,21 @@ To execute any of the subroutines provided by the script:
 
 Note: Some scripts operate on the currently selected mail item or appointment. Ensure you have selected the appropriate item before running these scripts.
 
+# Powerpoint AppleScript to store text of slides in a file
+
+## Background
+You might want to use ChatBots to work on some content of your powerpoint slides. You might already have a significant amount of data in your slides but it is hard to feed slides into Chatbots.
+This script will help to extract the text and support you in this task.
+
+## Usage
+1. Load this script into Apple Script Editor.
+2. Open your desired powerpoint file
+3. Select the slides you are interested in
+4. Run the script, it will take all text on all shapes of the selected slides and save it to a specified file
+
+
+# Remarks
+
 ## Customization
 
 This script can be customized to fit specific workflows or requirements. Feel free to modify the code to suit your needs. Common customizations might include changing the folder paths, modifying the task categories, or adjusting the criteria for bulk deletion operations.
