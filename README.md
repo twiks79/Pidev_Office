@@ -42,6 +42,15 @@ This script will help to extract the text and support you in this task.
 4. Run the script, it will take all text on all shapes of the selected slides and save it to a specified file
 
 
+# Word Macro that formats the next table in the document according to the defined standards
+
+## Background
+You might have a word document with many tables and formatting can get difficult. This macro can be used to define styling rules in the code and then always apply them to the next table.
+
+## Usage
+1. Load this macro into a word macro
+2. Run the macro to change the next table below the cursor
+
 # Remarks
 
 ## Customization
