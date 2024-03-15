@@ -6,9 +6,11 @@ Sub Macro1()
     If Selection.Range.Start <> Selection.Range.End Then
         ' Use the selected range if there's a selection
         Set targetRange = Selection.Range
+        isRange = True
     Else
         ' Use the entire document if there's no specific selection
         Set targetRange = ActiveDocument.Content
+        isRange = False
     End If
     
     ' Variable to track if at least one table is formatted
@@ -69,9 +71,13 @@ Sub Macro1()
         End With
         
         foundTable = True
+        If isRange = False Then
+            Exit Sub
+        End If
     Next tbl
 
     If Not foundTable Then
         MsgBox "No tables found in the target range."
     End If
 End Sub
+
