@@ -1,72 +1,43 @@
-# Outlook Automation VBA Script
+# Pidev_Office Repository Overview
 
-This repository contains a Visual Basic for Applications (VBA) script designed for Microsoft Outlook. The script includes several functionalities aimed at enhancing productivity and automating repetitive tasks. Key features include:
+Welcome to the Pidev_Office repository, your go-to source for automating tasks in Microsoft Office applications. This repository houses a collection of scripts and macros designed to enhance productivity and streamline workflows within Outlook, PowerPoint, and Word.
 
-- **GetCurrentItem**: Retrieves the currently selected mail item or appointment.
-- **MarkMailForMeeting**: Marks a selected mail item for a meeting.
-- **AttachItem**: Attaches a mail item identified by a global EntryID to the currently selected appointment.
-- **ToDo Management**: Creates tasks in specified categories ('Waiting For', 'Next', 'Small Projects', 'Large Projects', 'Later') based on the selected mail item.
-- **SaveAttachment**: Saves attachments from the selected mail item to a predefined directory.
-- **BulkDeleteAppointments**: Allows for bulk deletion of appointments with or without a custom cancellation message.
+## What's Inside
 
-## Installation
+This repository contains several key components aimed at automating specific tasks in different Microsoft Office applications. Each script or macro is tailored for ease of use and can be integrated into your daily tasks with minimal setup.
 
-To use this script, follow these steps:
+### Outlook Automation
 
-1. Open Microsoft Outlook.
-2. Press `Alt + F11` to open the VBA editor.
-3. In the Project Explorer, right-click on `ThisOutlookSession`, and select `Insert` -> `Module`.
-4. Copy and paste the provided VBA code into the new module.
-5. Save the VBA project.
+- **ThisOutlookSession.cls**: A VBA class file containing macros for automating various tasks within Microsoft Outlook. Enhance your email management and automate repetitive tasks to save time.
 
-## Usage
+### PowerPoint Automation
 
-To execute any of the subroutines provided by the script:
+- **powerpoint_selected_to_file.applescript**: An AppleScript that simplifies the process of exporting selected slides to a file. This script is designed for macOS users and integrates seamlessly with PowerPoint to enhance presentation management.
 
-1. Ensure that the VBA script is correctly installed as per the installation instructions.
-2. Go to the Developer tab in Outlook. If the Developer tab is not visible, enable it in the Outlook options.
-3. Choose 'Macros', select the desired macro from the list, and click 'Run'.
+### Word Automation
 
-Note: Some scripts operate on the currently selected mail item or appointment. Ensure you have selected the appropriate item before running these scripts.
+- **word_format_next_table.bas**: A VBA script that provides automated formatting for tables in Microsoft Word documents. Ensure consistency and professional formatting across your documents with ease.
 
-# Powerpoint AppleScript to store text of slides in a file
+- **word_search_in_tables.bas**: This VBA script allows you to search content within tables in Word documents efficiently. Streamline your document editing process by quickly locating and managing table data.
 
-## Background
-You might want to use ChatBots to work on some content of your powerpoint slides. You might already have a significant amount of data in your slides but it is hard to feed slides into Chatbots.
-This script will help to extract the text and support you in this task.
+## Getting Started
 
-## Usage
-1. Load this script into Apple Script Editor.
-2. Open your desired powerpoint file
-3. Select the slides you are interested in
-4. Run the script, it will take all text on all shapes of the selected slides and save it to a specified file
+To get started with these automation scripts, follow these simple steps:
 
-
-# Word Macro that formats the next table in the document according to the defined standards
-
-## Background
-You might have a word document with many tables and formatting can get difficult. This macro can be used to define styling rules in the code and then always apply them to the next table.
-
-## Usage
-1. Load this macro into a word macro
-2. Run the macro to change the next table below the cursor
-
-# Remarks
-
-## Customization
-
-This script can be customized to fit specific workflows or requirements. Feel free to modify the code to suit your needs. Common customizations might include changing the folder paths, modifying the task categories, or adjusting the criteria for bulk deletion operations.
+1. **Download the Scripts**: Clone this repository or download the files directly to your local machine.
+2. **Import the Scripts**:
+    - For VBA scripts, open the VBA editor in the respective Office application, and import the `.bas` or `.cls` files.
+    - For AppleScript, open the Script Editor on your macOS and load the `.applescript` file.
+3. **Customize as Needed**: Feel free to modify the scripts to fit your specific needs or workflow.
 
 ## Contributing
 
-Contributions to this project are welcome! If you have suggestions for improvements or have found a bug, please open an issue or submit a pull request.
+We welcome contributions and suggestions! If you have improvements, bug fixes, or new features you'd like to add, please feel free to submit a pull request or open an issue.
 
 ## License
 
-This project is released under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Disclaimer
+---
 
-This script is provided "as is", without warranty of any kind. Use it at your own risk. Always back up your data before running scripts that modify your Outlook items.
-
-
+We hope these scripts make your work with Microsoft Office applications more efficient and enjoyable. For any questions or feedback, please don't hesitate to reach out.
